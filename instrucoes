@@ -1,0 +1,23 @@
+Iniciar o projeto
+npm init -y
+
+Alterar a forma de importação para ESModule no arquivo package.json
+"type": "module"
+
+Iniciar o server
+node src/server.js
+
+Executar o serve para que ele fique escutando e realize as alterações automaticamente
+node --watch src/server.js
+
+Para facilitar a execução do server altere o aquivo package.json dentro da chave 
+scripts como abaixo
+"scripts": {
+    "dev": "node --watch src/server.js"
+  },
+
+agora execute
+npm run dev
+
+Para realizar requisições http instale o pacote httpie no archlinux
+sudo pacman -S httpie

@@ -1,0 +1,29 @@
+# Lista os usuários
+GET http://localhost:3333/users
+
+###
+GET http://localhost:3333/users?search=Vivian
+
+###
+
+POST http://localhost:3333/users
+Accept: application/json
+
+{
+    "name": "Rodrigo Ribeiro",
+    "email": "rodrigo.ribeiro@gmail.com"
+}
+
+###
+
+DELETE  http://localhost:3333/users/618fb0a5-736a-412d-9931-067c0a07ae5e
+
+###
+
+PUT http://localhost:3333/users/7cc15692-090b-48db-a5cb-5fd58d32947a
+Accept: application/json
+
+{
+    "name": "Vivian Soares Ribeiro",
+    "email": "vivi@gmail.com"
+}
